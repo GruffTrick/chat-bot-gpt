@@ -1,8 +1,11 @@
+// Interfaces with GPT 3-5 API and builds a chat interface in the node terminal
+
 import { config } from "dotenv";
 config();
 
 import OpenAI from "openai";
 import readline from "readline";
+
 
 const openai = new OpenAI({ 
     apiKey: process.env.API_KEY 
@@ -14,18 +17,7 @@ const userInterface = readline.createInterface({
     output: process.stdout,
 });
 
-
 userInterface.prompt()
-
-
-// // Chat Completion Respone
-// userInterface.on("line", async input => {
-// const chatCompletion = await openai.chat.completions.create({
-//     model: "gpt-3.5-turbo",
-//     messages: [{"role": "user", "content": input}],
-//   });
-//   console.log(chatCompletion.choices[0].message.content);
-// });
 
 // Streaming Response
     userInterface.on("line", async input => {

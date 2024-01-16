@@ -1,0 +1,15 @@
+p {
+    color: rgb(0, 255, 0);
+}
+
+.background {
+    background-color: aqua;
+}
+
+.textInput {
+    background-color: black;
+}
+
+.chatDialog {
+    background-color: blue;
+}
