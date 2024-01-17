@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    
-    <p>hi!</p>
 
-    <div class="background">
+<body style="background-color: black;">
+    <div class="background-area">
+        <p>background here</p>
         <!-- Chat Log Here -->
-        <div class="chatDialog">
-            
+        <div class="avatar-area">
+            avatars here
         </div>
-        <!-- Text Input Area -->>
-        <div class="textInput"></div>
+        <div class="dialog-area">
+            <div class="chatLog">
+                Chat Log here.
+            </div>
+        </div>
+
+        <!-- Text Input Area -->
+        <i></i>
+        <div class="prompt-area">
+            <input id="prompt-textarea" tabindex="0" data-id="root"
+                style="max-height: 200px; height: 52px; overflow-y: hidden;" rows="1" placeholder="Enter Message..."
+                class="promptBox" spellcheck="false">
+            <div class="cursor"><i></i></div>
+            </input>
+        </div>
     </div>
 
 </body>
