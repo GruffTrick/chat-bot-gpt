@@ -10,6 +10,22 @@ body {
     color: rgb(0, 255, 0);
 }
 
+html,
+button {
+    background-color: black;
+    color: rgb(0, 255, 0);
+    border: rgb(0, 255, 0);
+    border-style: solid;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.sendButton {
+    height: 60px;
+    width: auto;
+}
+
 .header {
     border-style: solid;
     border-color: green;
@@ -18,7 +34,7 @@ body {
 }
 
 .content {
-    border-style: solid;
+    /* border-style: solid; */
     border-color: blue;
     height: 75%;
 }
@@ -36,18 +52,18 @@ body {
     border: 5px rgb(0, 255, 0);
     border-style: solid;
     float: left;
-    margin-left: 5%;
+    margin-left: 1%;
     height: 95%;
 }
 
 .dialog-area {
     background: none;
-    border-style: solid;
-    float: right;
+    /* border-style: solid; */
+    float: auto;
     margin-right: 5%;
     overflow-y: auto;
 
-    width: 80%;
+    width: auto;
     height: 95%;
 }
 
@@ -70,8 +86,8 @@ body {
 
 .prompt-area {
     background: none;
-    border-style: solid;
-    width: 90%;
+    /* border-style: solid; */
+    width: 85%;
     margin: auto;
 }
 
@@ -79,10 +95,11 @@ body {
     font-family: monospace;
     font-weight: bolder;
     font-size: larger;
-    width: 50%;
-    border: 3px goldenrod;
+    width: 85%;
+    height: 60px;
+    border: 3px rgb(0, 255, 0);
     margin: auto;
-    border-style: none;
+    border-style: solid;
     background: none;
     color: rgb(0, 255, 0);
 }
@@ -90,8 +107,8 @@ body {
 .chatLog {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
-    width: 90%;
-    border: 3px goldenrod;
+    width: auto;
+    /* border: 3px goldenrod; */
     margin-left: 1%;
     margin-right: 1%;
     border-style: solid;
@@ -134,4 +151,8 @@ body {
     content: "";
     clear: both;
     display: table;
+}
+
+.padding {
+    padding-top: 5px;
 }
