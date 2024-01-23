@@ -73,8 +73,20 @@ async function sendMessage() {
 // Move askForApiKey() to the end of the file
 askForApiKey();
 
-// Add event listener for the button
-document.addEventListener('DOMContentLoaded', function () {
+// Add event listener for the input box
+userInput.addEventListener('keydown', function (event) {
+    // Check if the pressed key is Enter (key code 13)
+    if (event.key === 'Enter') {
+      sendMessage();
+      userInput.value = ''; // Clear the input box after sending the message
+    }
+  });
+  
+  // Add event listener for the button
+  document.addEventListener('DOMContentLoaded', function () {
     const sendButton = document.querySelector('button');
-    sendButton.addEventListener('click', sendMessage);
-});
+    sendButton.addEventListener('click', function () {
+      sendMessage();
+      userInput.value = ''; // Clear the input box after sending the message
+    });
+  });
