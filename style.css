@@ -41,7 +41,7 @@ button {
 
 .background-area {
     background: none;
-    border-style: solid;
+    border-style: none;
     width: 99%;
     height: 99%;
     margin: auto;
