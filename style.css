@@ -29,7 +29,7 @@ button {
 .header {
     border-style: solid;
     border-color: green;
-    height: 10%;
+    height: 65px;
     width: 100%;
 }
 
@@ -41,7 +41,7 @@ button {
 
 .background-area {
     background: none;
-    border-style: solid;
+    border-style: none;
     width: 99%;
     height: 99%;
     margin: auto;
